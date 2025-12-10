@@ -21,3 +21,36 @@
 // s1.introduce();
 
 // car class, model year speed, start accelerate stop 
+
+class Car{
+    constructor(model, year){
+        this.model = model;
+        this.year = year;
+        this.speed = 0;
+    }
+
+    start(){
+        console.log(`${this.model} is starting`)
+    }
+
+    accelerate(){
+        this.speed += 10
+        console.log(`${this.model} speed: ${this.speed}`)
+    }
+    
+    stop(){
+        this.speed = 0;
+        console.log(`${this.model} speed: ${this.speed}`)
+    }
+
+}
+
+const c1 = new Car("C", 2025);
+c1.start();
+c1.accelerate();
+c1.stop();
+
+const c2 = new Car("D", 2026);
+c2.start();
+c2.accelerate();
+c2.stop();
